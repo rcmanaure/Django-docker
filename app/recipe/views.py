@@ -28,7 +28,7 @@ from rest_framework.response import Response  # noqa
 #             OpenApiParameter(
 #                 'ingredients',
 #                 OpenApiTypes.STR,
-#                 description='Comma separated list of ingredient IDs to filter',
+#               description='Comma separated list of ingredient IDs to filter',
 #             ),
 #         ]
 #     )
@@ -55,7 +55,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
         #             queryset = queryset.filter(tags__id__in=tag_ids)
         #         if ingredients:
         #             ingredient_ids = self._params_to_ints(ingredients)
-        #             queryset = queryset.filter(ingredients__id__in=ingredient_ids)
+        #             queryset = queryset.filter(
+        # ingredients__id__in=ingredient_ids,)
 
         #         return queryset.filter(
         #             user=self.request.user
@@ -86,7 +87,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
 #             serializer.save()
 #             return Response(serializer.data, status=status.HTTP_200_OK)
 
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#         return Response(
+# serializer.errors, status=status.HTTP_400_BAD_REQUEST,)
 
 
 # @extend_schema_view(
