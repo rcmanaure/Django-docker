@@ -13,10 +13,11 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     // "isort.args":["--profile", "black"],
     "files.autoSave": "onFocusChange",
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "autoDocstring.docstringFormat": "sphinx",
