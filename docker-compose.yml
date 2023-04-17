@@ -20,7 +20,6 @@ services:
       - DB_NAME=test
       - DB_USER=postgres
       - DB_PASS=1234
-      - DATABASE_PORT=5432
       - DEBUG=1
     depends_on:
       - db
